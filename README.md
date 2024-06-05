@@ -1,5 +1,7 @@
 # Download Conceptual Captions Data
 
+This adds a modified script that stores the images in a hierarchical directory tree.  There can be performance problems when storing millions of files in a single directory.  This uses a 4-deep degree 16 tree of directories, with the path for each file determined by the first four characters of the hash in the file name.
+
 Place data from: https://ai.google.com/research/ConceptualCaptions/download in this folder
 
 `Train_GCC-training.tsv` Training Split (3,318,333)
